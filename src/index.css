@@ -1,0 +1,36 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.map {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+.location-icon {
+  font-size: 2rem;
+  color: red;
+}
+
+.location-info {
+  position: absolute;
+  top: 10vh;
+  right: 30vh;
+  width: 35vh;
+  min-height: 20vh;
+  padding: 5vh;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 2vh;
+  font-size: 3vh;
+  color: white;
+}
+
+.location-info ul {
+  list-style-type: none;
+  padding: 0;
+}
+.location-info li {
+  padding: 5px 0;
+}
