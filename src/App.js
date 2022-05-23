@@ -3,11 +3,11 @@ import { useState, useEffect } from "react";
 
 function App() {
   const [eventData, setEventData] = useState([]);
-  const [loading, setLoading] = useState(false);
+  // const [loading, setLoading] = useState(false);
 
   useEffect(() => {
     const fetchEvents = async () => {
-      setLoading(true);
+      // setLoading(true);
       const res = await fetch(
         "https://eonet.sci.gsfc.nasa.gov/api/v2.1/events"
       );
@@ -15,7 +15,7 @@ function App() {
       console.log(events, "events");
 
       setEventData(events);
-      setLoading(false);
+      // setLoading(false);
     };
 
     fetchEvents();
